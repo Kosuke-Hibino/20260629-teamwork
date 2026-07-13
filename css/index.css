@@ -1,11 +1,5 @@
 @charset "utf-8";
 
-nav.floating {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    background-color: #d0d0d0;
-}
 .main{
     display: block;
     background-image: url("../images/index/background.png");
@@ -16,6 +10,8 @@ nav.floating {
     display: block;
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .first-view-text h1{
@@ -55,14 +51,46 @@ nav.floating {
 }
 
 .bakery-list li{
-    
     background-color: #ffe492;
     background-image: url(../images/index/flame2.png);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 40px;
-    min-height: 120px;
+    width: 90%;
+    max-width: 600px;
+
+}
+
+.bakery-list li a h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.bakery-list li a img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.bakery-list li a dl{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 20px;
+}
+
+nav.floating {
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    z-index: 9999;
+    padding: 10px;
+    background-color: #efdf33;
 }
 
 *,
@@ -110,9 +138,10 @@ img {
     display: none;
 }
 
-.header-logo {
+.header-logo img{
     display: block;
-    
+    height: 70px;
+    width: auto;    
 }
 
 .footer {
@@ -128,7 +157,13 @@ img {
 .footer-logo {
     display: block;
     width: 235px;
-    margin-top: 90px;
+    margin-top: 30px;
+}
+
+.footer h1{
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .copyright {

@@ -1,6 +1,6 @@
 .title {
     height: 310px;
-    background-image: url(../images/bakery1/logo.png);
+    background-image: url(../images/bakery1/background.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: hsl(38, 81%, 56%);
+    color: hsl(127, 83%, 68%);
     text-shadow: 1px 1px 10px #4b2c14;
 }
 
@@ -68,6 +68,21 @@
     font-size: 15px;
     line-height: 28px;
     margin-top: 25px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.link p {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .images {
